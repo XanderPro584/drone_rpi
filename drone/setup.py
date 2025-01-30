@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'drone_arm_client = drone.arm_drone:main',
         ],
     },
 )
