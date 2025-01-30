@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find-pkg-share mavros)/launch/apm.launch">
+      <arg name="fcu_url" value="serial:///dev/serial0:921600"/>
+    </include>
+  </launch>
