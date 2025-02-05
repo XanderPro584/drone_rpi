@@ -20,6 +20,7 @@ class DroneArmingClient(Node):
         request = CommandBool.Request()
         request.value = True  # Request to arm the drone
 
+        self.get_logger().info("Sending arm request to mavros ")
         self.future = self.client.call_async(request)
         self.future.add_done_callback(self.response_callback)
 
@@ -36,7 +37,7 @@ class DroneArmingClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = DroneArmingClient()
-    rclpy.spin_once(node)  # Run the node once to send request
+    rclpy.spin(node)  # Run the node once to send request
     node.destroy_node()
     rclpy.shutdown()
 
