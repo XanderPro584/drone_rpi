@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'arm_drone = drone.arm_drone:main',
+            'drone_pose = drone.drone_pose:main',
         ],
     },
 )
