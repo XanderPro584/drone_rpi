@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'arm_drone = drone.arm_drone:main',
             'drone_pose = drone.drone_pose:main',
-            'set_throttle_test = drone.manual_throttle:main',
+            'set_throttle_test = drone.set_throttle_test:main',
+            'set_alt_test = drone.set_alt_test:main',
         ],
     },
 )

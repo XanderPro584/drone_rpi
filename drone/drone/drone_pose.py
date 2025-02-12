@@ -140,7 +140,7 @@ class DronePose(LifecycleNode):
                 goal_handle.execute()
 
     def go_to_waypoint_execute_callback(self, goal_handle: ServerGoalHandle):
-        # Publish the waypoint to the local position topic
+        # Publ`ish the waypoint to the local position topic
         with self.goal_lock:
             self.goal_handle = goal_handle
 

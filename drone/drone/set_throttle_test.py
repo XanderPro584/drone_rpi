@@ -12,7 +12,7 @@ class ManualThrottle(Node):
         msg = ManualControl()
         msg.x = 0.0  # Pitch
         msg.y = 0.0  # Roll
-        msg.z = 0.5  # 50% throttle (range 0 to 1)
+        msg.z = 0.3  # 50% throttle (range 0 to 1)
         msg.r = 0.0  # Yaw
         self.manual_pub.publish(msg)
         self.get_logger().info(f'Setting throttle to 50%')
