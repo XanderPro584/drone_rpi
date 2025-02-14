@@ -13,6 +13,7 @@
   <depend>example_interfaces</depend>
   <depend>drone_interfaces</depend>
   <depend>std_srvs</depend>
+  <depend>geographic_msgs</depend> 
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

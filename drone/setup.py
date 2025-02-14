@@ -24,6 +24,7 @@ setup(
             'drone_pose = drone.drone_pose:main',
             'set_throttle_test = drone.set_throttle_test:main',
             'set_alt_test = drone.set_alt_test:main',
+            'fake_gps = drone.fake_gps:main',
         ],
     },
 )
